@@ -8,11 +8,21 @@ What value do you think it offers?
 Staging area allows for organizing of files to be included in a commit. Even if we were working across multiple files at once, only the required files can be selected for committing.
 
 How can you use the staging area to make sure you have one commit per logical change?
+- Before committing every change that I have made, I can first lay it down (git add) in the staging area for preview. 
+Then I can make sure by inspecting that my next commit statement will cover one logical change.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+- Branches would help me track history of my deviations from my mainstream (official) build. These branches would help me to go back and forth from different builds in history so that an idea could be tested without affecting the master branch, so as not to affect anything running in production.
 
 How do the diagrams help you visualize the branch structure?
+- It gives a more intuitive view of the history of how branches “branched out” 
+- And to know when the branches were formed to see if it includes a feature or bug in the history
+- And to realize to which commits are reachable from the branch.
 
-What is the result of merging two branches together? Why do we represent it in the diagram   the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- The result is the original subset plus the union of the changes from branches.
+- The representation of the diagram shows the history of the branches and show the relationship of the commits and their parents commits.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+- Pros: save developers time 
+- Cons: Cannot really solve not so ambiguous differences between two commits. It might be a common sense for the involved developers but it is not wise for git to assume the merge on its own, unless it has a highly deep machine learning logic involved to cover so many cases of differences in merging.

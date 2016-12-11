@@ -1,23 +1,24 @@
 When would you want to use a remote repository rather than keeping all your work local?
-
-    Fill in your answer here
+- In order to collaborate your work with others or make it available if working from two computers.
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+- The remote and local will not always be in sync. It may be that the remote might have changes committed by someone else which you might not want to fetch until my current working set is complete.
 
 Describe the differences between forks, clones, and branches.  When would you use one instead of another?
 
-    Fill in your answer here
+- Branches refer to the marked commits within the repository. You will branch out to try out an experimental solution from the master within the same repository.
+- Clone will create a new repository by replicating from either a remote or a local repository
+- Fork will refer to “clones” within Github
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
-    Fill in your answer here
+- Having a local copy of the latest state helps to reduce the amount of changes, hence resolving conflict efforts if in case when checking with remote is not available for a period of time.
 
 How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
 
-    Fill in your answer here
+- Without the use of Git or Github, i will still have to use version control, but using things like Mercurial or SVN. They are already quite mature in our office environments, and we have more people who are familiar with their usage. So using the conventional way would be much easier in starting a project and there is no need to overcome the steep learning curve (I’d say with the given tools and resources, and the availability of people who are matured at using Git) that Git and Github has. I am yet to find out the difficult part from not being able to use Git, rather than from using other version controls such as SVN. And i would need a strong reasoning in order to persuade the development team to migrate to Git for the coming projects, in a company culture where svn is more common sense. As a matter of fact it becomes more cumbersome to use in having to utilize the command line interfaces in order to merge and resolve conflicts.
 
 When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
 
-    Fill in your answer here
+- I would always encourage the team to make changes to the separate branch first, then communicate and moderate with the team before merging into the master branch. This way we can keep the master branch as operational as possible. This makes a good practice for everyone. But the downside is that this can be a cumbersome task when doing just small fixes. Sometimes some common sense tasks can be amended straight from the master branch and makes it a whole lot easier for merging future branches.
